@@ -1,0 +1,232 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Balsamiq Sans, sans-serif;
+	/*background-image: url("./images/body.jpg");*/
+}
+
+#landing-page {
+	height: 100vh;
+	background: url(./images/landing2.png);
+	background-size: cover;
+	background-attachment: scroll;	
+}
+
+/* ------------- Mobile and Tablet -------------------- */
+
+@media only screen and (max-width: 1200px) {
+
+	.intro-box {
+		top: 60%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		position: absolute;
+	}
+
+	.intro-box h1 {
+		color: #94618E;
+		font-weight: bold;
+		padding: 0;
+		font-family: kalam;
+	}
+
+	.intro-box h5 {
+		color: #fff;
+	}
+	
+	.intro-box p {
+		margin-top: 30px;
+		padding: 0 30px 0 30px;
+		color: #777;
+		font-family: Balsamiq Sans;
+	}
+
+	.landing-buttons {
+		display: flex;
+		gap: 20px;
+		top: 85%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		position: absolute;
+	}
+
+	.buttons  {
+		color: #94618E;
+	}
+
+	.landing-buttons a:hover  {
+		color: #fff;
+		text-decoration: none;
+		border-bottom-style: solid;
+		border-color: #fff;
+	}
+
+	/* --------------- About --------------- */
+
+	#about {
+		height: auto;
+		padding: 80px 20px;
+		background-color: #E8CCC9;
+		color: #404040;
+		font-size: 0.75em;
+	}
+
+	.profile-img {
+		padding-top: 20px	;
+		height: 15%;
+	}
+
+	.tech-list {
+		display: flex;
+	}
+
+	.tools-list  {
+		display: flex;
+		gap: 50px;
+	}
+
+	.about-skills {
+		display: flex;
+		flex-direction: column;
+	}
+
+}
+
+/* ------------- Large Devices -------------------- */
+
+@media only screen and (min-width: 768px) {
+
+	.name {
+		font-size: 4em;
+	}
+
+	a.buttons h5  {
+		font-size: 1.3em;
+	}
+
+	.landing-buttons, .navbar-nav {
+		gap: 60px;
+	}
+
+	.nav-link {
+		font-size: 1.5em;
+	}
+
+	/* --------------- About -------------------- */
+
+	#about {
+		height: 100vh;
+		padding-top: 100px;
+		padding-left: 50px;
+		padding-bottom: 50px;
+		background-color: #E8CCC9;
+		color: #404040;
+	}
+
+	.profile-img {
+		padding-top: 50px	;
+		height: 15%;
+	}
+
+	.tech-list {
+		display: flex;
+		gap: 40px;
+	}
+
+	.tools-list  {
+		display: flex;
+		gap: 40px;
+	}
+
+	.about-skills {
+		display: flex;
+		flex-direction: row;
+		gap: 40px;
+	}
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+	.intro-box {
+		margin: 0;
+		padding: 0;
+		width: 50%;
+		top: 50%;
+		left: 70%;
+		transform: translate(-50%, -50%);
+		position: absolute;
+	}
+
+	.intro-box h1 {
+		color: #94618E;
+		font-weight: bold;
+		padding: 0;
+		font-family: kalam;
+	}
+
+	.intro-box h5 {
+		font-size: 1.5em;
+		color: #fff;
+	}
+
+	.intro-box p {
+		margin-top: 30px;
+		padding: 0 30px 0 30px;
+		color: #777;
+		font-family: Balsamiq Sans;
+		font-size: 1.5em;
+	}
+
+	.landing-buttons {
+		display: flex;
+		gap: 60px;
+		top: 85%;
+		left: 30%;
+		transform: translate(-50%, -50%);
+		position: absolute;
+	}
+
+	.buttons  {
+		color: #94618E;
+	}
+
+	a.buttons h5  {
+		font-size: 1.5em;
+	}
+
+	.landing-buttons a:hover  {
+		color: #fff;
+		text-decoration: none;
+		border-bottom-style: solid;
+		border-color: #fff;
+	}
+}
+
+/* ---------------Nav Bar -------------------- */
+
+.nav-bar {
+	top: 0;
+	position: sticky;
+	z-index: 2;
+}
+
+.navbar {
+	background-color: #F8EEE7;
+}
+
+.nav-bar .fa-bars, .nav-link {
+	color: #94618E;
+}
+
+.navbar-nav {
+	text-align: center;
+}
+
+.nav-item a:hover {
+	color: #969696;
+	font-weight: bold;
+}
+
+
