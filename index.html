@@ -37,8 +37,8 @@
                 </div>
                 <div class="landing-buttons">
                     <a href="#about" class="buttons"> <h5> About </h5> </a>
-                    <a href="#" class="buttons"> <h5> Projects </h5> </a>     
-                    <a href="#" class="buttons"> <h5> Contact </h5> </a>
+                    <a href="#projects" class="buttons"> <h5> Projects </h5> </a>     
+                    <a href="#contact" class="buttons"> <h5> Contact </h5> </a>
                 </div>
             </div>   
         </section>
@@ -54,11 +54,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
-                      <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                      <li class="nav-item ">
+                        <a class="nav-link " href="#about">About</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#services">Projects</a>
+                        <a class="nav-link" href="#projects">Projects</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -71,15 +71,21 @@
 
 
     <!-- About Me -->
-        <div id="about" class="about container-fluid" >
+        <div id="about" class="about">
+        <div class="title">
+            <img class="img-fluid" src="./images/stroke.png">
+        </div>
+        
+        <h3 > ABOUT ME </h3>
+
+        <div #id="about-body" class="container-fluid" >
             <div class="row">
-                <div class="col-12 col-md-8 ">
-                    <h3 class="mb-4"> ABOUT ME </h3>
+                <div class="col-12 offset-lg-1 col-lg-7 mb-3 pr-lg-5">
                     <p> My name is <span class="text-purple"> Ma. Rowena Empenado</span> . I'm a Full Stack Web Developer based in Las Piñas, Philippines. </p>  
                     <p> Prior to shifting into a Web Development career, I worked as an Analyst for several years in the financial services industry and a few years as a Software Tester in an IT consulting firm. </p>
-                    <p> My passion for coding began when I started learning VBA back in 2021. Since then, I have created several Excel macro tools which helped improve the efficiency within our team. I also started learning HTML and CSS while working on a project to streamline our team's onboarding processes. From then on, I figured out that I love creating things that simplify people's lives.
+                    <p> My passion for coding began when I started learning VBA back in 2021. Since then, I have created several Excel macro tools to automate BAU and admin tasks. I also started learning HTML and CSS while working on a project that streamlines our team's onboarding processes. From then on, I figured out that I love creating things that simplify people's lives.
                     </p> 
-                    <p> Come 2022, I decided to pursue Web Development by enrolling to Zuitt's Full Stack Web Development bootcamp and there I gained the skills and experiences I needed to become a well-equipped Web Developer.
+                    <p> Come 2022, I decided to pursue Web Development by enrolling to Zuitt's Full Stack Web Development bootcamp and there I gained the skills and experiences I need to become a well-equipped Web Developer.
                     </p>
                     <p> Here are some of the technologies and tools I have worked with so far:
                     </p>
@@ -110,17 +116,102 @@
                                 <li> Postman </li>
                             </ul>
                         </div>
-                    </div>                   
+                    </div>
                 </div>
-                <div class="col-12 col-md-4 text-center mt-2">
-                    <img src="./images/about-pic2.png" class="profile-img">
+                <div class="col-12  col-lg-4 text-center">
+                    <img src="./images/about-pic2.png" class="img-fluid  pic">
                 </div>
             </div>
         </div>
+        </div>
     <!-- End of About Me -->
-        
-        
 
+
+    <!-- Projects -->
+        <div id="projects" class="projects">
+        <div class="title">
+            <img class="img-fluid" src="./images/stroke.png">
+        </div>
+        
+        <h3> SOME THINGS I'VE CREATED </h3>
+
+            <div class="container py-2">
+                <card class="postcard">
+                    <a class="postcard-img-link" href="https://rowena-empenado.github.io/webportfolio/" target="_blank">
+                        <img class="postcard-img" src="./images/proj1.png"  />
+                    </a>
+                    <div class="postcard-text">
+                        <h1 class="postcard-title"><a href="https://rowena-empenado.github.io/webportfolio/" target="_blank">Developer Portfolio v1.0</a></h1>
+                        <p class="text-muted py-0"> Capstone 1 project </p>
+                       
+                        <div class="justify-contents-center">
+                            This is a static but responsive website of my portfolio, built within 3 days.  
+                            <ul class="d-flex p-0 mt-3">
+                                <li class="border mr-2 px-1 rounded text-light">HTML</li>
+                                <li class="border mr-2 px-1 rounded text-light">CSS</li>
+                                <li class="border px-1 rounded text-light">Bootstrap</li>
+                            </ul>
+                        </div>
+                    </div>
+                </card>
+            </div>
+
+            <div class="container py-2">
+                <card class="postcard">
+                    <a class="postcard-img-link" href="#" target="_blank">
+                        <img class="postcard-img" src="./images/placeholder.jpg"  />
+                    </a>
+                    <div class="postcard-text">
+                        <h1 class="postcard-title"><a href="https://rowena-empenado.github.io/webportfolio/" target="_blank">Project #2</a></h1>
+                        <p class="text-muted py-0"> Capstone 2 project </p>
+                       
+                        <div class="justify-contents-center">
+                            This is a ___________, built within _ days.  
+                            <ul class="d-flex flex-wrap align-content-between p-0 mt-3">
+                                <li class="border mr-2 mb-2 px-1 rounded text-light">JavaScript</li>
+                                <li class="border mr-2 mb-2 px-1 rounded text-light">MongoDB</li>
+                                <li class="border mr-2 mb-2 px-1 rounded text-light">Node.js</li>
+                                <li class="border px-1 mb-2 rounded text-light">React.js</li>
+                            </ul>
+                        </div>
+                    </div>
+                </card>
+            </div>
+      
+
+        </div>
+    <!-- End of Projects -->
+
+    <!-- Contact -->
+        
+    <!-- End of Contact -->
+
+        
+    <script type="text/javascript">
+
+        document.addEventListener('DOMContentLoaded', function() {
+        const selector = '.nav-link';
+        const elems = Array.from( document.querySelectorAll( selector ) );
+        const navigation = document.querySelector( 'nav' );
+
+        function makeActive( evt ) {
+          const target = evt.target;
+          
+          if ( !target || !target.matches( selector ) ) {
+            return;
+          }
+          
+          elems.forEach( elem => elem.classList.remove( 'active' ) );
+            
+            evt.target.classList.add( 'active' );
+        };
+
+        navigation.addEventListener( 'mousedown', makeActive );
+
+        } );
+
+    </script>   
+    
 
     <!-- Bootstrap Script -->
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

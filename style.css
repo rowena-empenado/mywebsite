@@ -3,8 +3,9 @@ body {
 	padding: 0;
 	box-sizing: border-box;
 	font-family: Balsamiq Sans, sans-serif;
-	/*background-image: url("./images/body.jpg");*/
 }
+
+/* ------------- Landing Page -------------------- */
 
 #landing-page {
 	height: 100vh;
@@ -12,8 +13,6 @@ body {
 	background-size: cover;
 	background-attachment: scroll;	
 }
-
-/* ------------- Mobile and Tablet -------------------- */
 
 @media only screen and (max-width: 1200px) {
 
@@ -62,38 +61,7 @@ body {
 		border-color: #fff;
 	}
 
-	/* --------------- About --------------- */
-
-	#about {
-		height: auto;
-		padding: 80px 20px;
-		background-color: #E8CCC9;
-		color: #404040;
-		font-size: 0.75em;
-	}
-
-	.profile-img {
-		padding-top: 20px	;
-		height: 15%;
-	}
-
-	.tech-list {
-		display: flex;
-	}
-
-	.tools-list  {
-		display: flex;
-		gap: 50px;
-	}
-
-	.about-skills {
-		display: flex;
-		flex-direction: column;
-	}
-
 }
-
-/* ------------- Large Devices -------------------- */
 
 @media only screen and (min-width: 768px) {
 
@@ -109,43 +77,7 @@ body {
 		gap: 60px;
 	}
 
-	.nav-link {
-		font-size: 1.5em;
-	}
-
-	/* --------------- About -------------------- */
-
-	#about {
-		height: 100vh;
-		padding-top: 100px;
-		padding-left: 50px;
-		padding-bottom: 50px;
-		background-color: #E8CCC9;
-		color: #404040;
-	}
-
-	.profile-img {
-		padding-top: 50px	;
-		height: 15%;
-	}
-
-	.tech-list {
-		display: flex;
-		gap: 40px;
-	}
-
-	.tools-list  {
-		display: flex;
-		gap: 40px;
-	}
-
-	.about-skills {
-		display: flex;
-		flex-direction: row;
-		gap: 40px;
-	}
 }
-
 
 @media only screen and (min-width: 1200px) {
 
@@ -225,8 +157,402 @@ body {
 }
 
 .nav-item a:hover {
-	color: #969696;
+	color: #94618E;
 	font-weight: bold;
 }
+
+@media only screen and (min-width: 768px) {
+
+	.nav-link {
+			font-size: 1.5em;
+	}
+
+	.nav-link.active {
+			border-bottom-style: solid;
+			border-color: #94618E;
+	}
+}
+
+
+/* --------------- About -------------------- */
+
+@media only screen and (max-width: 464.5px) {
+
+	.about {
+		height: auto;
+		padding: 50px 20px 50px 20px;
+		background-color: #E8CCC9;
+		color: #404040;
+		font-size: 1.0em;
+	}
+
+	.about .title {
+		padding-top: 10%;
+		width: 100%;
+		text-align: center;
+		color: #404040;
+		align-items: center;
+		margin: 0;
+	}
+
+	.about h3 {
+		font-weight: bold;
+		color: #404040;
+		text-align: center;
+		top: 50%;
+		left: 50%;
+		transform: translate(0%, -200%);
+		margin: 0;
+	}
+
+	.projects {
+		height: auto;
+		width: auto;
+		padding: 100px 20px 20px 20px;
+		background-color: #C2A2BE;
+		color: #404040;
+	}
+
+	#projects .title {
+		background-color: #C2A2BE;
+		color: #404040;
+	}
+
+	.projects h3 {
+		font-size: 1.2em;
+		font-weight: bold;
+		color: #404040;
+		text-align: center;
+		top: 50%;
+		left: 50%;
+		transform: translate(0%, -280%);
+	}
+}
+
+@media only screen and (min-width: 465px) and (max-width: 767.5px) {
+
+	.about {
+		height: auto;
+		padding: 50px 20px 50px 20px;
+		background-color: #E8CCC9;
+		color: #404040;
+		font-size: 1.0em;
+	}
+
+	.about .title {
+		padding-top: 10%;
+		width: 100%;
+		text-align: center;
+		color: #404040;
+		align-items: center;
+		margin: 0;
+	}
+
+	.about h3 {
+		font-size: 2.5em;
+		font-weight: bold;
+		color: #404040;
+		text-align: center;
+		top: 50%;
+		left: 50%;
+		transform: translate(0%, -200%);
+		margin: 0;
+	}
+
+	.projects {
+		height: auto;
+		width: auto;
+		padding: 100px 20px 20px 20px;
+		background-color: #C2A2BE;
+		color: #404040;
+	}
+
+	#projects .title {
+		background-color: #C2A2BE;
+		color: #404040;
+	}
+
+	.projects h3 {
+		font-size: 1.5em;
+		font-weight: bold;
+		color: #404040;
+		text-align: center;
+		top: 50%;
+		left: 50%;
+		transform: translate(0%, -280%);
+	}
+}
+
+@media only screen and (max-width: 767.5px) {
+
+	.about-skills {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.tech-list {
+		display: inline-flex;
+	}
+
+	.tools-list  {
+		display: inline-flex;
+		gap: 50px;
+	}
+
+}
+
+@media only screen and (min-width: 768px) {
+
+	.title {
+			padding-top: 2%;
+			width: 100%;
+			text-align: center;
+			background-color: #E8CCC9;
+			color: #404040;
+			align-items: center;
+	}
+
+	h3 {
+		font-weight: bold;
+		color: #404040;
+		text-align: center;
+		top: 50%;
+		left: 50%;
+		transform: translate(0%, -250%);
+		font-size: 2.5em;
+	}
+
+	.about {
+		height: auto;
+		width: auto;
+		padding: 100px 50px;
+		background-color: #E8CCC9;
+		color: #404040;
+	}
+
+	.pic {
+		width: 100%;
+		height: auto;
+		padding-top: 50px;
+	}
+
+	.tech-list {
+		display: flex;
+		gap: 40px;
+	}
+
+	.tools-list  {
+		display: flex;
+		gap: 40px;
+	}
+
+	.about-skills {
+		display: flex;
+		flex-direction: row;
+		gap: 40px;
+	}
+
+	/* ------------- Projects -------------- */
+
+	.projects {
+		height: auto;
+		width: auto;
+		padding: 100px 50px;
+		background-color: #C2A2BE;
+		color: #404040;
+	}
+
+	#projects .title {
+		background-color: #C2A2BE;
+		color: #404040;
+	}
+}
+
+
+@media only screen and (max-width: 991px) {
+
+	.pic {
+			width: 50%;
+			height: auto;
+			padding-top: 10px;
+		}
+}
+
+
+/* --------------- Projects ----------------- */
+
+@media only screen and (min-width: 992px) {
+
+	.postcard {
+	  flex-wrap: inherit;
+	  display: flex; 
+	  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+	  border-radius: 10px;
+	  margin: 0 0 2rem 0;
+	  overflow: hidden;
+	  position: relative;
+	  color: #404040;
+	  background-image: linear-gradient(-70deg, #F8EEE7, transparent 50%);
+	}
+
+	.postcard-title {
+	    font-size: 1.75rem;
+	    color: #404040;
+	    margin-bottom: 0px;
+	}
+
+	.postcard-img {
+	  max-width: 300px;
+	  max-height: 100%;
+	  transition: transform 0.3s ease;
+	}
+
+	.postcard-img-link {
+	    display: contents;
+	}
+
+	.postcard-text {
+	    position: relative;
+	    display: flex;
+	    flex-direction: column;
+	    padding: 3rem;
+	    width: 100%;
+	}
+
+	.postcard-text ul li {
+		list-style-type: none;
+		display: flex;
+		font-size: 1em;
+		text-align: center;
+	}
+
+	.postcard-title a {
+		color: #404040;
+		text-decoration: none;
+	}
+
+	.postcard-title a:hover {
+		color: #94618E;
+		text-decoration: none;
+	}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 991.5px) {
+
+	.postcard {
+		display: flex;
+		box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+		border-radius: 10px;
+		margin: 0 0 2rem 0;
+		overflow: hidden;
+		position: relative;
+		color: #404040;
+		background-image: linear-gradient(-70deg, #F8EEE7, transparent 50%);
+	}
+
+	.postcard-title {
+	    font-size: 1.2rem;
+	    font-weight: bold;
+	    color: #404040;
+	    margin-top: 20px;
+	}
+
+	.postcard-img {
+	  max-width: 250px;
+  	  max-height: 100%;
+  	  transition: transform 0.3s ease;
+	}
+
+	.postcard-img-link {
+	    display: contents;
+	}
+
+	.postcard-text {
+		font-size: 1.0rem;
+	    position: relative;
+	    display: flex;
+	    flex-direction: column;
+	    padding: 1rem;
+	    width: 100%;
+	}
+
+	.postcard-text ul li {
+		list-style-type: none;
+		display: flex;
+		flex-shrink: 1;
+		font-size: 1em;
+		text-align: center;
+	}
+
+	.postcard-title a {
+		color: #404040;
+		text-decoration: none;
+	}
+
+	.postcard-title a:hover {
+		color: #94618E;
+		text-decoration: none;
+	}
+}
+
+@media only screen and (max-width: 599.5px) {
+
+	.postcard {
+		display: block;
+		box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+		border-radius: 10px;
+		margin: 0 0 2rem 0;
+		overflow: hidden;
+		position: relative;
+		color: #404040;
+		background-image: linear-gradient(-70deg, #F8EEE7, transparent 50%);
+	}
+
+	.postcard-title {
+	    font-size: 1.2rem;
+	    font-weight: bold;
+	    color: #404040;
+	    margin-top: 20px;
+	}
+
+	.postcard-img {
+	  width: 100%;
+	  transition: transform 0.3s ease;
+	}
+
+	.postcard-img-link {
+	    display: contents;
+	}
+
+	.postcard-text {
+		font-size: 1.0rem;
+	    position: relative;
+	    display: flex;
+	    flex-direction: column;
+	    padding: 1rem;
+	    width: 100%;
+	}
+
+	.postcard-text ul li {
+		list-style-type: none;
+		display: flex;
+		flex-shrink: 1;
+		font-size: 1em;
+		text-align: center;
+	}
+
+	.postcard-title a {
+		color: #404040;
+		text-decoration: none;
+	}
+
+	.postcard-title a:hover {
+		color: #94618E;
+		text-decoration: none;
+	}
+}
+
+
+
 
 
