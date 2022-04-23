@@ -146,11 +146,13 @@
                   <li>Git</li>
                   <li>GitLab</li>
                   <li>GitHub</li>
+                  <li>Vercel</li>
                 </ul>
                 <ul type="circle">
                   <li>Sublime</li>
                   <li>Robo3T</li>
                   <li>Postman</li>
+                  <li>Heroku</li>
                 </ul>
               </div>
             </div>
@@ -171,6 +173,7 @@
 
       <h3>SOME THINGS I'VE CREATED</h3>
 
+      <!-- Project #1 -->
       <div class="container py-2">
         <card class="project-card">
           <a
@@ -179,12 +182,8 @@
             target="_blank"
           >
             <img
-              class="project-card-img d-md-none d-lg-block"
+              class="project-card-img img-fluid mh-100"
               src="./images/proj1.png"
-            />
-            <img
-              class="project-card-img d-none d-md-block d-lg-none"
-              src="./images/proj1-mobile.jpg"
             />
           </a>
           <div class="project-card-text">
@@ -192,27 +191,123 @@
               <a
                 href="https://rowena-empenado.github.io/webportfolio/"
                 target="_blank"
-                >Developer Portfolio v1.0</a
+                >Developer Portfolio v1</a
               >
             </h1>
             <p class="text-muted py-0">Capstone 1 project</p>
 
             <div class="justify-contents-center">
-              This is a static but responsive website of my portfolio, built
-              within 3 days. Hosted in GitHub.
-              <ul class="d-flex flex-wrap align-content-between p-0 mt-3">
-                <li class="border mr-2 mb-2 px-1 rounded text-light">HTML</li>
-                <li class="border mr-2 mb-2 px-1 rounded text-light">CSS</li>
-                <li class="border mr-2 mb-2 px-1 rounded text-light">
-                  Bootstrap
-                </li>
-                <li class="border mb-2 px-1 rounded text-light">GitHub</li>
-              </ul>
+              <p>
+                This is a static but responsive website of my portfolio, built
+                within 3 days.
+              </p>
+
+              <div class="accordion mb-2" id="proj1">
+                <div class="card accordion-style">
+                  <div class="card-header" id="headingOne">
+                    <div
+                      class="text-left"
+                      role="button"
+                      data-toggle="collapse"
+                      data-target="#proj1Features"
+                      aria-expanded="false"
+                      aria-controls="proj1Features"
+                    >
+                      Features:
+                    </div>
+                  </div>
+
+                  <div
+                    id="proj1Features"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-parent="#proj1"
+                  >
+                    <div class="card-body">
+                      - Custom web page font style using Google Fonts <br />
+                      - Page responsiveness on three types of devices (mobile,
+                      tablet and desktop) <br />
+                      - Home/Landing page, About Me section, Projects section,
+                      Contact Me section, Navbar <br />
+                      - Social media links
+                    </div>
+                  </div>
+                </div>
+                <div class="card accordion-style">
+                  <div class="card-header" id="headingTwo">
+                    <div
+                      class="text-left"
+                      role="button"
+                      data-toggle="collapse"
+                      data-target="#proj1Tech"
+                      aria-expanded="false"
+                      aria-controls="proj1Tech"
+                    >
+                      Technologies:
+                    </div>
+                  </div>
+                  <div
+                    id="proj1Tech"
+                    class="collapse"
+                    aria-labelledby="headingTwo"
+                    data-parent="#proj1"
+                  >
+                    <div class="card-body pt-3 pb-0">
+                      <ul class="d-flex flex-wrap align-content-between p-0">
+                        <li class="tech-border-style mr-2 mb-2 px-1 rounded">
+                          HTML
+                        </li>
+                        <li class="tech-border-style mr-2 mb-2 px-1 rounded">
+                          CSS
+                        </li>
+                        <li class="tech-border-style mb-2 px-1 rounded">
+                          Bootstrap
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card accordion-style">
+                  <div class="card-header" id="headingThree">
+                    <div
+                      class="text-left"
+                      role="button"
+                      data-toggle="collapse"
+                      data-target="#proj1Tools"
+                      aria-expanded="false"
+                      aria-controls="proj1Tools"
+                    >
+                      Tools:
+                    </div>
+                  </div>
+                  <div
+                    id="proj1Tools"
+                    class="collapse"
+                    aria-labelledby="headingThree"
+                    data-parent="#proj1"
+                  >
+                    <div class="card-body pt-3 pb-0">
+                      <ul class="d-flex flex-wrap align-content-between p-0">
+                        <li class="tools-border-style mr-2 mb-1 px-1 rounded">
+                          Sublime Text
+                        </li>
+                        <li class="tools-border-style mr-2 mb-1 px-1 rounded">
+                          GitLab
+                        </li>
+                        <li class="tools-border-style mb-1 px-1 rounded">
+                          GitHub
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </card>
       </div>
 
+      <!-- Project #2 -->
       <div class="container py-2">
         <card class="project-card">
           <a
@@ -227,86 +322,290 @@
               <a
                 href="https://gitlab.com/rowena-empenado/s37-s41-capstone-2-development/capstone-2"
                 target="_blank"
-                >Ecommerce API</a
+                >E-commerce App API</a
               >
             </h1>
             <p class="text-muted py-0">Capstone 2 project</p>
 
             <div class="justify-contents-center">
-              This is an Ecommerce API (MVP), built within 5 days. Hosted in
-              Heroku.
-              <ul class="d-flex flex-wrap align-content-between p-0 mt-3">
-                <li class="border mr-2 mb-2 px-1 rounded text-light">
-                  JavaScript
-                </li>
-                <li class="border mr-2 mb-2 px-1 rounded text-light">
-                  MongoDB
-                </li>
-                <li class="border mr-2 mb-2 px-1 rounded text-light">
-                  Node.js
-                </li>
-                <li class="border mr-2 px-1 mb-2 rounded text-light">
-                  Express.js
-                </li>
-                <li class="border px-1 mb-2 rounded text-light">Heroku</li>
-              </ul>
+              <p>
+                This is an E-commerce App API (MVP) built within 5 days.<br />
+                <a
+                  href="https://sleepy-escarpment-28596.herokuapp.com"
+                  class="card-text-link"
+                  target="_blank"
+                  >Heroku API</a
+                >
+              </p>
+
+              <div class="accordion mb-2" id="proj2">
+                <div class="card accordion-style">
+                  <div class="card-header" id="headingOne">
+                    <div
+                      class="text-left"
+                      role="button"
+                      data-toggle="collapse"
+                      data-target="#proj2Features"
+                      aria-expanded="false"
+                      aria-controls="proj2Features"
+                    >
+                      Features:
+                    </div>
+                  </div>
+
+                  <div
+                    id="proj2Features"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-parent="#proj2"
+                  >
+                    <div class="card-body">
+                      - User registration with email check <br />
+                      - User authentication using jwt (JSON web token) <br />
+                      - Admin functionalities: retrieve user details, set user
+                      as Admin, retrieve all active products, retrieve single
+                      product, create product, update product information,
+                      archive product, retrieve all users' orders <br />
+                      - Regular user functionalities: retrieve single product,
+                      checkout/create orders, retrieve orders
+                    </div>
+                  </div>
+                </div>
+                <div class="card accordion-style">
+                  <div class="card-header" id="headingTwo">
+                    <div
+                      class="text-left"
+                      role="button"
+                      data-toggle="collapse"
+                      data-target="#proj2Tech"
+                      aria-expanded="false"
+                      aria-controls="proj2Tech"
+                    >
+                      Technologies:
+                    </div>
+                  </div>
+                  <div
+                    id="proj2Tech"
+                    class="collapse"
+                    aria-labelledby="headingTwo"
+                    data-parent="#proj2"
+                  >
+                    <div class="card-body pt-3 pb-0">
+                      <ul class="d-flex flex-wrap align-content-between p-0">
+                        <li class="tech-border-style mr-2 mb-2 px-1 rounded">
+                          JavaScript
+                        </li>
+                        <li class="tech-border-style mr-2 mb-2 px-1 rounded">
+                          MongoDB
+                        </li>
+                        <li class="tech-border-style mr-2 mb-2 px-1 rounded">
+                          Node.js
+                        </li>
+                        <li class="tech-border-style mr-2 px-1 mb-2 rounded">
+                          Express.js
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card accordion-style">
+                  <div class="card-header" id="headingThree">
+                    <div
+                      class="text-left"
+                      role="button"
+                      data-toggle="collapse"
+                      data-target="#proj2Tools"
+                      aria-expanded="false"
+                      aria-controls="proj2Tools"
+                    >
+                      Tools:
+                    </div>
+                  </div>
+                  <div
+                    id="proj2Tools"
+                    class="collapse"
+                    aria-labelledby="headingThree"
+                    data-parent="#proj2"
+                  >
+                    <div class="card-body pt-3 pb-0">
+                      <ul class="d-flex flex-wrap align-content-between p-0">
+                        <li class="tools-border-style mr-2 mb-1 px-1 rounded">
+                          Visual Studio Code
+                        </li>
+                        <li class="tools-border-style mr-2 mb-1 px-1 rounded">
+                          GitLab
+                        </li>
+                        <li class="tools-border-style mr-2 mb-1 px-1 rounded">
+                          Postman
+                        </li>
+                        <li class="tools-border-style mb-1 px-1 rounded">
+                          Heroku
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </card>
       </div>
 
-      <div class="container pt-2">
+      <!-- Project #3 -->
+      <div class="container">
         <card class="project-card">
           <a
             class="project-card-img-link"
             href="https://capstone-3-development-capstone-3-neon.vercel.app/"
             target="_blank"
           >
-            <img
-              class="project-card-img d-md-none d-lg-block"
-              src="./images/proj3.jpg"
-            />
-            <img
-              class="project-card-img d-none d-md-block d-lg-none"
-              src="./images/proj3-mobile.jpg"
-            />
+            <img class="project-card-img" src="./images/proj3.jpg" />
           </a>
           <div class="project-card-text">
             <h1 class="project-card-title">
               <a
                 href="https://capstone-3-development-capstone-3-neon.vercel.app/"
                 target="_blank"
-                >React Application Frontend</a
+                >E-commerce App</a
               >
             </h1>
             <p class="text-muted py-0">Capstone 3 project</p>
 
             <div class="justify-contents-center">
-              This is a react application frontend integrated with the Ecommerce
-              API, built in 1-2 weeks. Hosted in Vercel.
-              <ul class="d-flex flex-wrap align-content-between p-0 mt-3">
-                <li class="border mr-2 mb-2 px-1 rounded text-light">HTML</li>
-                <li class="border mr-2 mb-2 px-1 rounded text-light">CSS</li>
-                <li class="border mr-2 mb-2 px-1 rounded text-light">
-                  Bootstrap
-                </li>
-                <li class="border mr-2 mb-2 px-1 rounded text-light">
-                  JavaScript
-                </li>
-                <li class="border mr-2 px-1 mb-2 rounded text-light">
-                  React.js
-                </li>
-                <li class="border mr-2 mb-2 px-1 rounded text-light">
-                  MongoDB
-                </li>
-                <li class="border mr-2 mb-2 px-1 rounded text-light">
-                  Node.js
-                </li>
-                <li class="border mr-2 px-1 mb-2 rounded text-light">
-                  Express.js
-                </li>
-                <li class="border px-1 mb-2 rounded text-light">Vercel</li>
-              </ul>
+              <p>
+                This is an E-commerce MERN app (named as ShopPAW) built in 1-2
+                weeks.
+              </p>
+
+              <div class="accordion mb-2" id="proj3">
+                <div class="card accordion-style">
+                  <div class="card-header" id="headingOne">
+                    <div
+                      class="text-left"
+                      role="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="false"
+                      aria-controls="collapseOne"
+                    >
+                      Features:
+                    </div>
+                  </div>
+
+                  <div
+                    id="collapseOne"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-parent="#proj3"
+                  >
+                    <div class="card-body">
+                      - User registration page with proper form validation
+                      <br />
+                      - User authentication using jwt (JSON web token) <br />
+                      - Product catalog page and specific product page that
+                      varies depending on user type (regular user vs. admin)
+                      <br />
+                      - Cart view page that shows all the items the user has
+                      added to their cart, their quantities, subtotal, and the
+                      total price for all items ; user can also change product
+                      quantities, remove products from cart, and checkout the
+                      items <br />
+                      - Order page that shows all the user's previously placed
+                      orders
+                      <br />
+                      - Admin/Dashboard that can retrieve list of all products
+                      (available or unavailable), create new product, update
+                      product information, deactivate/reactivate product, and
+                      retrieve a list of all orders made by all users <br />
+                      - App is also responsive across mobile/tablet/desktop
+                      screen sizes
+                    </div>
+                  </div>
+                </div>
+                <div class="card accordion-style">
+                  <div class="card-header" id="headingTwo">
+                    <div
+                      class="text-left"
+                      role="button"
+                      data-toggle="collapse"
+                      data-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Technologies:
+                    </div>
+                  </div>
+                  <div
+                    id="collapseTwo"
+                    class="collapse"
+                    aria-labelledby="headingTwo"
+                    data-parent="#proj3"
+                  >
+                    <div class="card-body pt-3 pb-0">
+                      <ul class="d-flex flex-wrap align-content-between p-0">
+                        <li class="tech-border-style mr-2 mb-2 px-1 rounded">
+                          HTML
+                        </li>
+                        <li class="tech-border-style mr-2 mb-2 px-1 rounded">
+                          CSS
+                        </li>
+                        <li class="tech-border-style mr-2 mb-2 px-1 rounded">
+                          Bootstrap
+                        </li>
+                        <li class="tech-border-style mr-2 mb-2 px-1 rounded">
+                          JavaScript
+                        </li>
+                        <li class="tech-border-style mr-2 mb-2 px-1 rounded">
+                          React.js
+                        </li>
+                        <li class="tech-border-style mr-2 mb-2 px-1 rounded">
+                          MongoDB
+                        </li>
+                        <li class="tech-border-style mr-2 mb-2 px-1 rounded">
+                          Node.js
+                        </li>
+                        <li class="tech-border-style mr-2 px-1 mb-2 rounded">
+                          Express.js
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card accordion-style">
+                  <div class="card-header" id="headingThree">
+                    <div
+                      class="text-left"
+                      role="button"
+                      data-toggle="collapse"
+                      data-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Tools:
+                    </div>
+                  </div>
+                  <div
+                    id="collapseThree"
+                    class="collapse"
+                    aria-labelledby="headingThree"
+                    data-parent="#proj3"
+                  >
+                    <div class="card-body pt-3 pb-0">
+                      <ul class="d-flex flex-wrap align-content-between p-0">
+                        <li class="tools-border-style mr-2 mb-1 px-1 rounded">
+                          Visual Studio Code
+                        </li>
+                        <li class="tools-border-style mr-2 mb-1 px-1 rounded">
+                          GitLab
+                        </li>
+                        <li class="tools-border-style mb-1 px-1 rounded">
+                          Vercel
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </card>
@@ -339,6 +638,32 @@
                 <li class="border mr-2 mb-2 px-1 rounded text-light">CSS</li>
                 <li class="border mr-2 mb-2 px-1 rounded text-light">
                   React.js
+                </li>
+                <li class="border mb-2 px-1 rounded text-light">GitHub</li>
+              </ul>
+            </div>
+          </div>
+        </card>
+      </div>
+
+      <div class="container py-2">
+        <card class="project-card">
+          <a class="project-card-img-link" href="#">
+            <img class="project-card-img" src="./images/proj4.jpg" />
+          </a>
+          <div class="project-card-text">
+            <h1 class="project-card-title">
+              <a href="#">Developer Portfolio v2</a>
+            </h1>
+            <p class="text-muted py-0">Ongoing project</p>
+
+            <div class="justify-contents-center">
+              This is the 2nd iteration of my portfolio. Hosted in GitHub.
+              <ul class="d-flex flex-wrap align-content-between p-0 mt-3">
+                <li class="border mr-2 mb-2 px-1 rounded text-light">HTML</li>
+                <li class="border mr-2 mb-2 px-1 rounded text-light">CSS</li>
+                <li class="border mr-2 mb-2 px-1 rounded text-light">
+                  Bootstrap
                 </li>
                 <li class="border mb-2 px-1 rounded text-light">GitHub</li>
               </ul>
@@ -435,16 +760,7 @@
             </form>
           </div>
           <div class="col-12 col-lg-3 socials">
-            <div class="text-center">
-              <button class="cv-button">
-                <a
-                  href="https://drive.google.com/file/d/17f9c3pYHL1-udNFQ299rbD8Hvh5EzcHL/view?usp=sharing"
-                  target="_blank"
-                  class="cv-link"
-                  >Download CV</a
-                >
-              </button>
-            </div>
+            <div class="text-center"></div>
             <div>Find me elsewhere...</div>
             <div class="socials-icons">
               <a href="https://www.facebook.com/" target="_blank"
